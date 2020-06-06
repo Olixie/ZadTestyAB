@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="containter">
+        <div id="form1">
+            <h1>Formularz 1</h1>
+            <form action="/action_page.php" method="get" class="formularz">
+                <div class="fcolmain colu">
+                    <div>
+                        <label for="fname">Imie:</label>
+                        <input type="text" id="fname" name="fname" class="margin"><br><br>
+                    </div>
+                    <div>
+                        <label for="fnazwisko">Nazwisko:</label>
+                        <input type="text" id="fnazwisko" name="fnazwisko" class="margin"><br><br>
+                    </div>
+                   
+                    <div class="inter">
+                        <label for="finterest">Czym sie interesujesz?:</label>
+                        <textarea name="finterest" id="finterest" cols="20" rows="5" class="margin"></textarea>
+                    </div><br>
+                    
+                    <div>
+                        <label for="fwiek">Ile masz lat:</label>
+                        <input type="number" id="fwiek" name="fwiek" min="18" max="80" class="margin"><br><br>
+                    </div>
+                    <div>
+                        <label for="fplec">Płec:</label>
+                            
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Mężczyzna</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Kobieta</label><br><br>
+                    </div>
+                    
+                    <div>
+                        <label for="cars">Skąd pochodzisz?:</label>
+                        <select id="cars" name="cars" class="margin">
+                            <option value="volvo">Woj. Zachodnioopmorskie</option>
+                            <option value="saab">Woj. Pomorskie</option>
+                            <option value="fiat">Woj. Wielkopolskie</option>
+                            <option value="audi">Woj. Mazowieckie</option>
+                        </select>
+                    </div>    
+                    
+            </div>
+                <a type="button" href="goodbye.html">Wyslij</a>
+              </form>
+        </div>
+        <div id="form2">
+            <h1>Formularz 2</h1>
+            <form action="/action_page.php" method="get" class="formularz">
+                <div class="fcolmain">
+                    <div class="fcol">
+                        <label for="fname">Imie:</label>
+                        <input type="text" id="fname" name="fname">
+                        <label for="fwiek">Ile masz lat:</label>
+                        <input type="number" id="fwiek" name="fwiek" min="18" max="80">
+                        <label for="finterest">Czym sie interesujesz?:</label>
+                        <textarea name="finterest" id="finterest" cols="20" rows="5"></textarea>
+                        
+                    </div>
+                    <div class="fcol">
+                        <label for="fnazwisko">Nazwisko:</label>
+                        <input type="text" id="fnazwisko" name="fnazwisko">
+
+                        <label for="fplec">Płec:</label>
+                        <div>
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">Mężczyzna</label><br>
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Kobieta</label><br>
+                        </div>
+                       
+                        <label for="cars">Skąd pochodzisz?:</label>
+                        <select id="cars" name="cars">
+                            <option value="volvo">Woj. Zachodnioopmorskie</option>
+                            <option value="saab">Woj. Pomorskie</option>
+                            <option value="fiat">Woj. Wielkopolskie</option>
+                            <option value="audi">Woj. Mazowieckie</option>
+                        </select>
+                    </div>
+                </div>
+               
+                <a type="button" href="goodbye.html">Wyslij</a>
+              </form>
+        </div>
+    </div>
+</body>
+</html>
